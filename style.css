@@ -1,128 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #191765;
+  margin: 0;
+  padding: 0;
+  background-color: #191765;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5em;
 }
 
 .myLogo {
-    color: white;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 #whiteEllipse {
-    display: block;
-    float: left;
-}
-
-#ellipseTwo {
-    display: block;
-    float: right;
-}
-
-li a {
-    color: white;
-    text-decoration: none;
-}
-
-.abilities li {
-    list-style: none;
-    line-height: 2.5em;
-}
-
-.skills a {
-    text-decoration: none;
-}
-
-#languages, #frameworks, #skills {
-    text-decoration: none;
-    color: #9490FF;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.skillsSection {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#linkedIn {
-    height: 20px;
-}
-
-.profiles li {
-    list-style: none;
-    size: 20px;
-    margin-right: 20px;
-}
-
-.profiles {
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
+  display: block;
+  float: left;
 }
 
 #myName {
-    color: #7D73FC;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
+  color: #7d73fc;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
 }
 
 #myTitle {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #EDECFF;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #edecff;
+  text-align: center;
 }
 
-#myTitle:hover, #myName:hover, #shortBio:hover {
-    text-decoration: underline;
-    text-decoration-color: #0d24f0;
+#myTitle:hover,
+#myName:hover,
+#shortBio:hover,
+.myLogo:hover {
+  text-decoration: underline;
+  text-decoration-color: #0d24f0;
 }
 
 #shortBio {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #c8c8d4;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #c8c8d4;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .headline {
-    display: flex;
-    flex-direction: column;
-    padding-right: 15px;
-}
-
-.mySkills ul {
-    padding-left: 0;
-}
-
-.mySkills {
-    margin-left: 40px;
-    margin-top: 25px;
-}
-
-.line {
-    width: 300px;
-    height: 10px;
-    margin-left: 30px;
-}
-
-li a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-a:hover, #languages:hover, #frameworks:hover, #skills:hover {
-    text-decoration: underline;
-    text-decoration-color: #0d24f0;
+  background-image: url(/assets/ellipseHeader.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
 }
