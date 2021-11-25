@@ -5,7 +5,6 @@
 > This project is the setup and mobile version skeleton of my portfolio.
 
 ![screenshot](assets/appScreenshot1.png)
-![screenshot](assets/appScreenshot2.png)
 
 ## Built With
 
