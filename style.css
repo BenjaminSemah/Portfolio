@@ -42,15 +42,7 @@ header {
   text-align: center;
 }
 
-#myTitle:hover,
-#myName:hover,
-#shortBio:hover,
-.myLogo:hover {
-  text-decoration: underline;
-  text-decoration-color: #0d24f0;
-}
-
-#shortBio {
+.shortBio {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -58,6 +50,14 @@ header {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+
+#myTitle:hover,
+#myName:hover,
+.shortBio:hover,
+.myLogo:hover {
+  text-decoration: underline;
+  text-decoration-color: #0d24f0;
 }
 
 .headline {
