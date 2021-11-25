@@ -61,7 +61,7 @@ header {
 }
 
 .headline {
-  background-image: url(/assets/ellipseHeader.svg);
+  background-image: url(./assets/ellipseHeader.svg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
