@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #191765;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5em;
+}
+
+.myLogo {
+    color: white;
+    text-decoration: none;
+}
+
+#whiteEllipse {
+    display: block;
+    float: left;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.abilities li {
+    list-style: none;
+}
+
+.skills a {
+    text-decoration: none;
+}
+
+#languages, #frameworks, #skills {
+    text-decoration: none;
+    color: #9490FF;
+}
+
