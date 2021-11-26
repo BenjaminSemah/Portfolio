@@ -2,9 +2,9 @@
 
 # Portfolio
 
-> This project is the setup and mobile version skeleton of my portfolio.
+> This project is the mobile version of my portfolio website.
 
-![screenshot](assets/appScreenshot1.png)
+![screenshot](./assets/appMobileVersion.png)
 
 ## Built With
 
