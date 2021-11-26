@@ -70,17 +70,48 @@ header {
   background-position: right;
 }
 
-.mySkills {
+.myLanguages {
   margin-top: 25px;
-  margin-left: 60px;
+  margin-left: 50px;
+  list-style: none;
 }
 
-.abilities {
+.myFrameworks {
+  margin-top: 25px;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.mySkills {
+  margin-top: 25px;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.languages-list {
   padding-left: 0;
   text-decoration: none;
 }
 
-.abilities li {
+.languages-list .language {
+  list-style: none;
+}
+
+.frameworks-list {
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.frameworks-list .framework {
+  list-style: none;
+}
+
+.skills-list {
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.skills-list .skill {
   list-style: none;
 }
 
@@ -101,7 +132,7 @@ a h2 {
   font-size: 12px;
 }
 
-.skillsSection {
+.knowledge {
   display: flex;
   flex-wrap: wrap;
 }
@@ -196,6 +227,8 @@ a h2 {
 }
 
 #project1 {
+  display: flex;
+  flex-direction: column;
   background-image: url(./assets/pro1image.svg);
   background-repeat: no-repeat;
   background-position: left;
@@ -203,6 +236,8 @@ a h2 {
 }
 
 #project2 {
+  display: flex;
+  flex-direction: column;
   background-image: url(./assets/pro2image.svg);
   background-repeat: no-repeat;
   background-position: right;
@@ -210,6 +245,8 @@ a h2 {
 }
 
 #project3 {
+  display: flex;
+  flex-direction: column;
   background-image: url(./assets/pro3image.svg);
   background-repeat: no-repeat;
   background-position: left;
@@ -217,6 +254,8 @@ a h2 {
 }
 
 #project4 {
+  display: flex;
+  flex-direction: column;
   background-image: url(./assets/pro4image.svg);
   background-repeat: no-repeat;
   background-position: right;
@@ -231,6 +270,7 @@ a h2 {
   font-weight: 500;
   font-size: 12px;
   color: #edecff;
+  max-width: 100px;
 }
 
 .projectButton:hover {
