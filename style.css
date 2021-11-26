@@ -21,11 +21,6 @@ header {
   font-weight: 500;
 }
 
-/* #whiteEllipse {
-  display: block;
-  float: left;
-} */
-
 #myName {
   color: #7d73fc;
   font-family: 'Roboto', sans-serif;
@@ -78,3 +73,42 @@ ellipse2 {
   display: block;
   float: left;
 }
+
+.mySkills {
+  margin-top: 30px;
+  margin-left: 52px;
+}
+
+.abilities {
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.abilities li{
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+#frameworks,
+#languages,
+#skills {
+  text-decoration: none;
+  color: #9490FF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.skillsSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
