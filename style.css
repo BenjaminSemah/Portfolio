@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 body {
   margin: 0;
@@ -19,11 +20,6 @@ header {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-}
-
-#whiteEllipse {
-  display: block;
-  float: left;
 }
 
 #myName {
@@ -66,4 +62,225 @@ header {
   display: flex;
   flex-direction: column;
   padding: 25px;
+}
+
+.myAbilities {
+  background-image: url(./assets/ellipse2.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.myLanguages {
+  margin-top: 25px;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.myFrameworks {
+  margin-top: 25px;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.mySkills {
+  margin-top: 25px;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.languages-list {
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.languages-list .language {
+  list-style: none;
+}
+
+.frameworks-list {
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.frameworks-list .framework {
+  list-style: none;
+}
+
+.skills-list {
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.skills-list .skill {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+a h2 {
+  text-decoration: none;
+  color: #9490ff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.knowledge {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.line {
+  width: 300px;
+  margin-left: 30px;
+}
+
+#github,
+#linkedIn,
+#angellist,
+#twitter,
+#medium {
+  width: 20px;
+  margin: 10px;
+}
+
+.profiles {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#downArrow {
+  height: 20px;
+  margin: 5px;
+}
+
+.work h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #c4c4c4;
+  margin: 5px;
+}
+
+.myRecentWorks {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #9490ff;
+  text-align: left;
+  margin: 0;
+  padding-top: 70px;
+  padding-left: 30px;
+  text-transform: uppercase;
+}
+
+.languagesUsed {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.languagesUsed li {
+  color: white;
+  margin: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.myProjects {
+  display: grid;
+}
+
+.multiPost {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+}
+
+.projectBrief {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  color: #dcdce8;
+}
+
+#project1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/pro1image.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 20px;
+}
+
+#project2 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/pro2image.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 20px;
+}
+
+#project3 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/pro3image.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 20px;
+}
+
+#project4 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/pro4image.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 20px;
+}
+
+.projectButton {
+  padding: 18px 15px;
+  background-color: #7d73fc;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #edecff;
+  max-width: 100px;
+}
+
+.projectButton:hover {
+  box-shadow: 0 8px 16px 0 rgba(125, 115, 252, 0.48);
+}
+
+.projectButton:active {
+  background-color: rgba(94, 66, 215, 1);
+}
+
+.projectButton:disabled {
+  background-color: rgba(42, 43, 51, 1);
 }
