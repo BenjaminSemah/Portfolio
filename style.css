@@ -75,7 +75,7 @@ ellipse2 {
 }
 
 .mySkills {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 52px;
 }
 
@@ -112,3 +112,24 @@ li a {
   flex-wrap: wrap;
 }
 
+.line {
+  width: 300px;
+  margin-left: 30px;
+}
+
+#github,
+#linkedIn,
+#angellist,
+#twitter,
+#medium {
+  width: 20px;
+  margin: 10px;
+}
+
+.profiles {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+}
