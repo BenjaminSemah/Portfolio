@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 body {
   margin: 0;
@@ -76,7 +77,7 @@ ellipse2 {
 
 .mySkills {
   margin-top: 25px;
-  margin-left: 52px;
+  margin-left: 60px;
 }
 
 .abilities {
@@ -133,3 +134,129 @@ li a {
   justify-content: center;
   align-items: center;
 }
+
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#downArrow {
+  height: 20px;
+  margin: 5px;
+}
+
+.work h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #c4c4c4;
+  margin: 5px;
+}
+
+.myRecentWorks {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #9490FF;
+  text-align: left;
+  margin: 0px;
+  padding-top: 70px;
+  padding-left: 30px;
+  text-transform: uppercase;
+}
+
+.languagesUsed {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.languagesUsed li {
+  color: white;
+  margin: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.myProjects {
+  display: grid;
+}
+
+.multiPost {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+}
+
+.projectBrief {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  color: #DCDCE8;
+  /* Add Hover Effect */
+  /* Add Hover Effect */
+  /* Add Hover Effect */
+  /* Add Hover Effect */
+  /* Add Hover Effect */
+  /* Add Hover Effect */
+  /* Add Hover Effect */
+  /* Add Hover Effect */
+}
+
+#project1 {
+  background-image: url(./assets/pro1image.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 20px;
+}
+
+#project2 {
+  background-image: url(./assets/pro2image.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 20px;
+}
+
+#project3 {
+  background-image: url(./assets/pro3image.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 20px;
+}
+
+#project4 {
+  background-image: url(./assets/pro4image.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 20px;
+}
+
+.projectButton {
+  padding: 18px 15px;
+  background-color: #7d73fc;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #EDECFF;
+}
+
+.projectButton:hover {
+  box-shadow: 0px 8px 16px 0px rgba(125, 115, 252, 0.48);
+}
+
+.projectButton:active {
+  background-color: rgba(94, 66, 215, 1);
+}
+
+.projectButton:disabled {
+  background-color: rgba(42, 43, 51, 1);
+}
+
