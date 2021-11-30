@@ -138,8 +138,9 @@ a h2 {
 }
 
 .line {
-	width: 300px;
-	margin-left: 30px;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
 }
 
 /* #github,
@@ -287,4 +288,56 @@ a h2 {
 
 .projectButton:disabled {
 	background-color: rgba(42, 43, 51, 1);
+}
+
+.contact {
+	margin-top: 5rem;
+}
+
+.contact-text {
+	padding: 2rem;
+	text-align: center;
+}
+.contact-text h2 {
+	font-family: "Roboto", sans-serif;
+	color: #9390ff;
+	font-size: 32px;
+	line-height: 44px;
+}
+.contact-text p {
+	font-family: "Inter", sans-serif;
+	font-family: "";
+	color: #f5f5ff;
+	margin-bottom: 1rem;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+form {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+.formEl {
+	margin: 1rem 0;
+	padding: 0.75rem;
+}
+::placeholder {
+	color: #81818c;
+}
+.btn {
+	margin: 1rem auto;
+}
+.mail {
+	display: block;
+	text-align: center;
+	margin-bottom: 3rem;
+	color: #ebebff;
+	font-size: 20px;
+	line-height: 28px;
+	margin-top: -1rem;
+}
+
+.footer-icons {
+	margin-bottom: 1rem;
 }
