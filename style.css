@@ -139,18 +139,10 @@ a h2 {
 
 .line {
   display: block;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
-/* #github,
-#linkedIn,
-#angellist,
-#twitter,
-#medium {
-  width: 20px;
-  margin: 10px;
-} */
 .icons {
   width: 20px;
   margin: 10px;
@@ -329,6 +321,9 @@ form {
 
 ::placeholder {
   color: #81818c;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .btn {
