@@ -374,7 +374,7 @@ form {
     margin-right: 2.5em;
   }
 
-  /* #myName {
+  #myName {
     font-size: 90px;
     line-height: 105px;
     margin-bottom: 0;
@@ -391,7 +391,7 @@ form {
     line-height: 32px;
   }
 
-  .knowledge {
+  /* .knowledge {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
