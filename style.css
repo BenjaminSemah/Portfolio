@@ -343,3 +343,65 @@ form {
 .footer-icons {
   margin-bottom: 1rem;
 }
+
+.desktop-nav-items {
+  display: none;
+}
+
+@media only screen and (min-width: 1080px) {
+  
+  .hamburger-menu {
+    display: none;
+  }
+
+  header {
+    margin: 0 2rem;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .desktop-nav-items{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500px;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    margin-right: 2.5em;
+  }
+
+  /* #myName {
+    font-size: 90px;
+    line-height: 105px;
+    margin-bottom: 0;
+  }
+
+  #myTitle {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 0.5em;
+  }
+
+  .shortBio {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .knowledge {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .myLanguages,
+  .myFrameworks,
+  .mySkills {
+    margin: 10px 25px;
+  } */
+
+}
