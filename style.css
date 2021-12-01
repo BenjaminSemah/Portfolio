@@ -391,7 +391,7 @@ form {
     line-height: 32px;
   }
 
-  /* .knowledge {
+  .knowledge {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -402,6 +402,6 @@ form {
   .myFrameworks,
   .mySkills {
     margin: 10px 25px;
-  } */
+  }
 
 }
