@@ -156,7 +156,8 @@ a h2 {
   align-items: center;
 }
 
-.work {
+.work,
+.work1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +168,8 @@ a h2 {
   margin: 5px;
 }
 
-.work h2 {
+.work h2,
+.work1 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -344,6 +346,10 @@ form {
   margin-bottom: 1rem;
 }
 
+.work1 {
+  display: none;
+}
+
 .desktop-nav-items {
   display: none;
 }
@@ -356,6 +362,10 @@ form {
 
   header {
     margin: 0 2rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 90%;
   }
 
   nav {
@@ -389,6 +399,11 @@ form {
   .shortBio {
     font-size: 20px;
     line-height: 32px;
+    text-align: justify;
+    text-align-last: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .knowledge {
@@ -401,7 +416,54 @@ form {
   .myLanguages,
   .myFrameworks,
   .mySkills {
-    margin: 10px 25px;
+    margin: 10px 35px;
   }
 
+  #skills h2,
+  #frameworks h2,
+  #languages h2 {
+    font-size: 18px;
+  }
+
+  .line {
+    width: 450px;
+  }
+
+  .work1 {
+    display: flex;
+  }
+
+.workAndSocials {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+
+.main-content {
+  background-image: url(./assets/twoCircles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.headline,
+.myAbilities {
+  background-image: none;
+}
+
+
+
+
+/* #project4 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/pro4image.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 20px;
+} */
+
+
+  /* background-image: url(./assets/ellipseHeader.svg);
+  background-repeat: no-repeat; */
 }
