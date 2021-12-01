@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
 body {
   margin: 0;
@@ -18,20 +18,20 @@ header {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
 #myName {
   color: #7d73fc;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 48px;
   text-align: center;
 }
 
 #myTitle {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 32px;
   color: #edecff;
@@ -39,7 +39,7 @@ header {
 }
 
 .shortBio {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #c8c8d4;
@@ -118,7 +118,7 @@ header {
 li a {
   text-decoration: none;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 14px;
   line-height: 30px;
@@ -127,7 +127,7 @@ li a {
 a h2 {
   text-decoration: none;
   color: #9490ff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 12px;
 }
@@ -138,15 +138,12 @@ a h2 {
 }
 
 .line {
-  width: 300px;
-  margin-left: 30px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
-#github,
-#linkedIn,
-#angellist,
-#twitter,
-#medium {
+.icons {
   width: 20px;
   margin: 10px;
 }
@@ -171,7 +168,7 @@ a h2 {
 }
 
 .work h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
@@ -180,7 +177,7 @@ a h2 {
 }
 
 .myRecentWorks {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 40px;
   color: #9490ff;
@@ -202,7 +199,7 @@ a h2 {
 .languagesUsed li {
   color: white;
   margin: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
 }
@@ -212,14 +209,14 @@ a h2 {
 }
 
 .multiPost {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 32px;
   color: white;
 }
 
 .projectBrief {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-align: left;
@@ -266,7 +263,7 @@ a h2 {
   padding: 18px 15px;
   background-color: #7d73fc;
   border: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 12px;
   color: #edecff;
@@ -283,4 +280,66 @@ a h2 {
 
 .projectButton:disabled {
   background-color: rgba(42, 43, 51, 1);
+}
+
+.contact {
+  margin-top: 5rem;
+}
+
+.contact-text {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-text h2 {
+  font-family: "Roboto", sans-serif;
+  color: #9390ff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.contact-text p {
+  font-family: "Inter", sans-serif;
+  color: #f5f5ff;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formEl {
+  margin: 1rem 0;
+  padding: 0.75rem;
+}
+
+::placeholder {
+  color: #81818c;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.btn {
+  margin: 1rem auto;
+}
+
+.mail {
+  display: block;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: -1rem;
+}
+
+.footer-icons {
+  margin-bottom: 1rem;
 }
