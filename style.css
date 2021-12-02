@@ -166,7 +166,7 @@ a h2 {
   align-items: center;
 }
 
-#downArrow {
+.downArrow {
   height: 20px;
   margin: 5px;
 }
@@ -392,7 +392,7 @@ form {
     text-decoration: none;
     color: white;
     font-family: "Roboto", sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 15px;
     font-style: normal;
     line-height: 20px;
@@ -502,7 +502,7 @@ form {
 
   .projectImages img {
     height: 448px;
-    width: 684;
+    width: 684px;
     margin-bottom: -6px;
     margin-right: 25px;
   }
@@ -537,7 +537,7 @@ form {
   .project2Info,
   .project4Info {
     position: absolute;
-    left: 130px;
+    left: 160px;
   }
 
   #project1 {
