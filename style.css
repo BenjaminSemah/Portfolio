@@ -370,6 +370,20 @@ form {
   display: none;
 }
 
+.imageNumber1,
+.imageNumber2,
+.imageNumber3,
+.imageNumber4 {
+  transition: all .2s ease-in-out;
+}
+
+.imageNumber1:hover,
+.imageNumber2:hover,
+.imageNumber3:hover,
+.imageNumber4:hover {
+  transform: scale(1.1);
+}
+
 @media only screen and (min-width: 1080px) {
   
   .hamburger-menu {
