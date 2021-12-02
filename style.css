@@ -137,7 +137,10 @@ a h2 {
   flex-wrap: wrap;
 }
 
-.line {
+.line1,
+.line2,
+.line3,
+.line4 {
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -188,6 +191,10 @@ a h2 {
   padding-top: 70px;
   padding-left: 30px;
   text-transform: uppercase;
+}
+
+.myRecentWorks2 {
+  display: none;
 }
 
 .languagesUsed {
@@ -354,6 +361,10 @@ form {
   display: none;
 }
 
+.chat {
+  display: none;
+}
+
 @media only screen and (min-width: 1080px) {
   
   .hamburger-menu {
@@ -425,32 +436,161 @@ form {
     font-size: 18px;
   }
 
-  .line {
-    width: 450px;
-  }
-
   .work1 {
     display: flex;
   }
 
-.workAndSocials {
+  .workAndSocials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+  }
+
+  .main-content {
+    background-image: url(./assets/twoCircles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .headline,
+  .myAbilities {
+    background-image: none;
+  }
+
+  .myRecentWorks {
+    display: none;
+  }
+
+  .myRecentWorks2 {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 114px;
+    color: #9490ff;
+    text-align: left;
+    margin: 65px 0 10px 130px;
+    padding-top: 70px;
+    text-transform: none;
+  }
+
+.line1,
+.line2 {
+  width: 450px;
+}
+
+.line3 {
+  margin: 0 130px;
+  /* width: 100%; */
+  /* margin-right: auto;
+  margin-left: auto; */ */
+}
+
+.projectImages img {
+  height: 448px;
+  width: 684;
+  margin-bottom: -6px;
+  margin-right: 25px;
+}
+
+#project1,
+#project3 {
   display: flex;
-  justify-content: space-around;
-  margin-top: 5em;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 75px 130px;
 }
 
-.main-content {
-  background-image: url(./assets/twoCircles.svg);
+#project2,
+#project4 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  padding: 75px 130px;
+}
+
+.project1Info,
+.project2Info,
+.project3Info,
+.project4Info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.project4Info {
+  margin-right: px;
+}
+
+#project1 {
+  background-image: url(./assets/pro1desktop.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: left;
 }
 
-.headline,
-.myAbilities {
-  background-image: none;
+#project2 {
+  background-image: url(./assets/pro2desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
+#project3 {
+  background-image: url(./assets/pro3desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#project4 {
+  background-image: url(./assets/pro4desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.projectBrief {
+  width: 450px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.multiPost {
+  margin: 30px 0;
+}
+
+.contactUsHeading {
+  display: none;
+}
+
+.chat {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 24px;
+}
+
+.contactForm {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.socialsAndEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail {
+  margin: 0 0 13px 0;
+}
+
+.footer-socials {
+  margin: 0;
+}
 
 
 
