@@ -137,7 +137,10 @@ a h2 {
   flex-wrap: wrap;
 }
 
-.line {
+.line1,
+.line2,
+.line3,
+.line4 {
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -156,18 +159,20 @@ a h2 {
   align-items: center;
 }
 
-.work {
+.work,
+.work1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#downArrow {
+.downArrow {
   height: 20px;
   margin: 5px;
 }
 
-.work h2 {
+.work h2,
+.work1 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -186,6 +191,10 @@ a h2 {
   padding-top: 70px;
   padding-left: 30px;
   text-transform: uppercase;
+}
+
+.myRecentWorks2 {
+  display: none;
 }
 
 .languagesUsed {
@@ -342,4 +351,276 @@ form {
 
 .footer-icons {
   margin-bottom: 1rem;
+}
+
+.work1 {
+  display: none;
+}
+
+.desktop-nav-items {
+  display: none;
+}
+
+.chat {
+  display: none;
+}
+
+.desktopLine3,
+.desktopLine4 {
+  display: none;
+}
+
+@media only screen and (min-width: 1080px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  header {
+    margin: 0 2rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 90%;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .desktop-nav-items {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    margin-right: 2.5em;
+  }
+
+  #myName {
+    font-size: 90px;
+    line-height: 105px;
+    margin-bottom: 0;
+  }
+
+  #myTitle {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 0.5em;
+  }
+
+  .shortBio {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+    text-align-last: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .knowledge {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .myLanguages,
+  .myFrameworks,
+  .mySkills {
+    margin: 10px 35px;
+  }
+
+  #skills h2,
+  #frameworks h2,
+  #languages h2 {
+    font-size: 18px;
+  }
+
+  .work1 {
+    display: flex;
+  }
+
+  .workAndSocials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+  }
+
+  .main-content {
+    background-image: url(./assets/twoCircles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .headline,
+  .myAbilities {
+    background-image: none;
+  }
+
+  .myRecentWorks {
+    display: none;
+  }
+
+  .myRecentWorks2 {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 114px;
+    color: #9490ff;
+    text-align: left;
+    margin: 65px 0 10px 130px;
+    padding-top: 70px;
+    text-transform: none;
+  }
+
+  .line1,
+  .line2 {
+    width: 450px;
+  }
+
+  .line3,
+  .line4 {
+    display: none;
+  }
+
+  .desktopLine3,
+  .desktopLine4 {
+    display: block;
+  }
+
+  .desktopLine3 {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  .projectImages img {
+    height: 448px;
+    width: 684px;
+    margin-bottom: -6px;
+    margin-right: 25px;
+  }
+
+  #project1,
+  #project3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 75px 130px;
+  }
+
+  #project2,
+  #project4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 75px 130px;
+  }
+
+  .project1Info,
+  .project2Info,
+  .project3Info,
+  .project4Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .project2Info,
+  .project4Info {
+    position: absolute;
+    left: 160px;
+  }
+
+  #project1 {
+    background-image: url(./assets/pro1desktop.svg);
+    background-position: left;
+  }
+
+  #project2 {
+    background-image: url(./assets/pro2desktop.svg);
+    background-position: right;
+  }
+
+  #project3 {
+    background-image: url(./assets/pro3desktop.svg);
+    background-position: left;
+  }
+
+  #project4 {
+    background-image: url(./assets/pro4desktop.svg);
+    background-position: right;
+  }
+
+  #project1,
+  #project2,
+  #project3,
+  #project4 {
+    background-repeat: no-repeat;
+  }
+
+  .imageNumber2,
+  .imageNumber4 {
+    position: relative;
+    left: 220px;
+  }
+
+  .projectBrief {
+    width: 450px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .multiPost {
+    margin: 30px 0;
+  }
+
+  .contactUsHeading {
+    display: none;
+  }
+
+  .chat {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 24px;
+  }
+
+  .contactForm {
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .socialsAndEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mail {
+    margin: 0 0 13px 0;
+  }
+
+  .footer-socials {
+    margin: 0;
+  }
+
+  ::placeholder {
+    color: #81818c;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+  }
 }
