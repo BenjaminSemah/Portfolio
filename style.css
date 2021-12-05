@@ -551,7 +551,7 @@ form {
   .project2Info,
   .project4Info {
     position: absolute;
-    left: 130px;
+    left: 160px;
   }
 
   #project1 {
@@ -581,6 +581,12 @@ form {
     background-repeat: no-repeat;
   }
 
+  .imageNumber2,
+  .imageNumber4 {
+    position: relative;
+    left: 220px;
+  }
+
   .projectBrief {
     width: 450px;
     font-family: "Roboto", sans-serif;
@@ -605,7 +611,7 @@ form {
   }
 
   .contactForm {
-    width: 60%;
+    width: 45%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -618,6 +624,11 @@ form {
 
   .mail {
     margin: 0 0 13px 0;
+  }
+
+  .emailAddress {
+    color: white;
+    text-decoration: none;
   }
 
   .footer-socials {
