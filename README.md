@@ -2,7 +2,8 @@
 
 # Portfolio
 
-> This project is the mobile version of my portfolio website.
+> This project is my portfolio website. The website is live at 
+> [My Portfolio Website](https://benjaminsemah.github.io/Portfolio/)
 
 ![screenshot](./assets/appMobileVersion.png)
 
