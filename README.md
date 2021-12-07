@@ -2,10 +2,16 @@
 
 # Portfolio
 
-> This project is my portfolio website. It is live at 
+This is a mock up portfolio project built as part of the Microverse curriculum.
+
+
+![screenshot](./assets/appScreenshot.png)
+
+### Live Demo
+click on the link below to view the portfolio website online
 > [My Portfolio Website](https://benjaminsemah.github.io/Portfolio/)
 
-![screenshot](./assets/appMobileVersion.png)
+
 
 ## Built With
 
@@ -22,7 +28,10 @@
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+👤 **Muneeb Ul Rehman**
+
+- GitHub: [Muneeb Ul Rehman](https://github.com/muneebulrehman)
+
 
 ## Show your support
 
