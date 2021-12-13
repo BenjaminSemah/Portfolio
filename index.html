@@ -6,17 +6,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Portfolio</title>
 		<link rel="stylesheet" href="style.css" />
-	</head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-W4SZNNFH8Z"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){window.dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'GA_MEASUREMENT_ID');
-		</script>
+		<script src="https://kit.fontawesome.com/08f846d58a.js" crossorigin="anonymous"></script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-W4SZNNFH8Z"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){window.dataLayer.push(arguments);}
+				gtag('js', new Date());
+	
+				gtag('config', 'GA_MEASUREMENT_ID');
+			</script>
+	</head>	
 	<body>
+		<nav class="mobile-menu">
+			<div class="mobile-menu-wrapper">
+				<i class="closeBtn fa fa-times" aria-hidden="true"></i>
+				<ul class="mobile-menu-list">
+					<li class="mobile-menu-item"><a href="#portfolioWorks">Portfolio</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+					<li class="mobile-menu-item"><a href="#myTitle">About</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+					<li class="mobile-menu-item"><a href="#contactSection">Contact</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+		</nav>
 		<header>
 			<a class="myLogo" href="#">My Logo</a>
 			<nav class="navIcon">
@@ -156,7 +167,7 @@
 				<h2>Work</h2>
 			</div>
 		</div>
-		<section class="recentWorks">
+		<section id="portfolioWorks" class="recentWorks">
 			<h2 class="myRecentWorks">
 				My Recent<br />
 				Work
@@ -285,7 +296,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="contact">
+		<footer id="contactSection" class="contact">
 			<div class="contactForm">
 				<div class="contact-text">
 					<h2 class="contactUsHeading">CONTACT US</h2>
@@ -367,8 +378,9 @@
 						</li>
 					</ul>
 				</div>
-				<span class="mail"><a class="emailAddress" href="mailto:ouremail@email.com">emailhere@email.com</a></span>
+				<span class="mail"><a id="bottomMail" class="emailAddress" href="mailto:ouremail@email.com">emailhere@email.com</a></span>
 			</div>
 		</footer>
+		<script src="./mobileMenu.js"></script>
 	</body>
 </html>
