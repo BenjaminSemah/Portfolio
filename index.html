@@ -20,6 +20,17 @@
 		</script>
 		
 	<body>
+		<nav class="mobile-menu">
+			<div class="mobile-menu-wrapper">
+				<i class="closeBtn fa fa-times" aria-hidden="true"></i>
+				<ul class="mobile-menu-list">
+					<li class="mobile-menu-item"><a href="#portfolioWorks">Portfolio</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+					<li class="mobile-menu-item"><a href="#myTitle">About</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+					<li class="mobile-menu-item"><a href="#contactSection">Contact</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+				</ul>
+		</div>
+		</nav>
+		</div>
 		<header>
 			<a class="myLogo" href="#">My Logo</a>
 			<nav class="navIcon">
@@ -31,15 +42,6 @@
 			</nav>
 		</header>
 		<main class="main-content">
-			<section class="mobile-menu">
-				<i class="fa fa-times" aria-hidden="true"></i>
-				<ul class="mobile-menu-items">
-					<li><h3>Portfolio</h3><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-					<li><h3>About</h3><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-					<li><h3>Contact</h3><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-				</ul>
-		
-			</section>
 			<section class="headline">
 				<div class="nameTitle">
 					<h1 id="myName">Benjamin Semah</h1>
@@ -168,7 +170,7 @@
 				<h2>Work</h2>
 			</div>
 		</div>
-		<section class="recentWorks">
+		<section id="portfolioWorks" class="recentWorks">
 			<h2 class="myRecentWorks">
 				My Recent<br />
 				Work
@@ -297,7 +299,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="contact">
+		<footer id="contactSection" class="contact">
 			<div class="contactForm">
 				<div class="contact-text">
 					<h2 class="contactUsHeading">CONTACT US</h2>
@@ -379,7 +381,7 @@
 						</li>
 					</ul>
 				</div>
-				<span class="mail"><a class="emailAddress" href="mailto:ouremail@email.com">emailhere@email.com</a></span>
+				<span class="mail"><a id="bottomMail" class="emailAddress" href="mailto:ouremail@email.com">emailhere@email.com</a></span>
 			</div>
 		</footer>
 		<script src="./mobileMenu.js"></script>

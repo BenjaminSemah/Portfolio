@@ -1,18 +1,16 @@
-let menu = document.querySelector('.hamburger-menu');
-menu.addEventListener('click',event=>{
-    let allElements = document.querySelectorAll('body *');
-    
-    let body = document.querySelector('body');
-    // body.replaceChildren()
-  
-    
-    Array.from(allElements).forEach((node)=>{
-        
-        node.setAttribute('style','display:none')
-    })
-    let showMenu = document.querySelector('.mobile-menu')
-    console.log(showMenu)
+let hamburgerMenu = document.querySelector('.hamburger-menu');
+let closeBtn = document.querySelector('.closeBtn');
+let mobileMenu = document.querySelector('.mobile-menu');
+let mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
 
-    showMenu.setAttribute('style', 'display:block')
+hamburgerMenu.addEventListener('click', showMobileMenu);
+closeBtn.addEventListener('click', removeMobileMenu);
+mobileMenu.addEventListener('click', removeMobileMenu);
 
-})
+function showMobileMenu() {
+    mobileMenu.setAttribute('style', 'display:block');
+}
+
+function removeMobileMenu() {
+    mobileMenu.setAttribute('style', 'display:none');
+}
