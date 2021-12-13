@@ -383,6 +383,9 @@ form {
 .imageNumber4:hover {
   transform: scale(1.1);
 }
+.mobile-menu {
+  display: none;
+}
 
 @media only screen and (min-width: 1080px) {
   .hamburger-menu {

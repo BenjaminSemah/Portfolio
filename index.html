@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Portfolio</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/08f846d58a.js" crossorigin="anonymous"></script>
+
 	</head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-W4SZNNFH8Z"></script>
@@ -16,6 +18,7 @@
 
 		  gtag('config', 'GA_MEASUREMENT_ID');
 		</script>
+		
 	<body>
 		<header>
 			<a class="myLogo" href="#">My Logo</a>
@@ -28,6 +31,15 @@
 			</nav>
 		</header>
 		<main class="main-content">
+			<section class="mobile-menu">
+				<i class="fa fa-times" aria-hidden="true"></i>
+				<ul class="mobile-menu-items">
+					<li><h3>Portfolio</h3><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+					<li><h3>About</h3><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+					<li><h3>Contact</h3><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+				</ul>
+		
+			</section>
 			<section class="headline">
 				<div class="nameTitle">
 					<h1 id="myName">Benjamin Semah</h1>
@@ -370,5 +382,6 @@
 				<span class="mail"><a class="emailAddress" href="mailto:ouremail@email.com">emailhere@email.com</a></span>
 			</div>
 		</footer>
+		<script src="./mobileMenu.js"></script>
 	</body>
 </html>
