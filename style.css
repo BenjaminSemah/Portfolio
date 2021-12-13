@@ -389,7 +389,6 @@ form {
   text-decoration: none;
 }
 
-
 /* MOBILE MENU */
 .mobile-menu {
   display: none;
@@ -419,7 +418,7 @@ form {
   justify-content: space-between;
 }
 
-.mobile-menu-item a{
+.mobile-menu-item a {
   font-family: "Roboto", sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -436,13 +435,11 @@ form {
 
 .closeBtn {
   color: #e5e5e5;
-  padding-top: 10px;
   font-size: 1.3em;
   text-align: right;
   margin-right: 37px;
   padding-top: 20px;
 }
-
 
 @media only screen and (min-width: 1080px) {
   .hamburger-menu {

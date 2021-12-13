@@ -1,16 +1,19 @@
-let hamburgerMenu = document.querySelector('.hamburger-menu');
-let closeBtn = document.querySelector('.closeBtn');
-let mobileMenu = document.querySelector('.mobile-menu');
-let mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
-
-hamburgerMenu.addEventListener('click', showMobileMenu);
-closeBtn.addEventListener('click', removeMobileMenu);
-mobileMenu.addEventListener('click', removeMobileMenu);
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const closeBtn = document.querySelector('.closeBtn');
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenuItem = document.querySelectorAll('.mobile-menu-item a');
 
 function showMobileMenu() {
-    mobileMenu.setAttribute('style', 'display:block');
+  mobileMenu.setAttribute('style', 'display:block');
 }
 
 function removeMobileMenu() {
-    mobileMenu.setAttribute('style', 'display:none');
+  mobileMenu.setAttribute('style', 'display:none');
 }
+
+hamburgerMenu.addEventListener('click', showMobileMenu);
+closeBtn.addEventListener('click', removeMobileMenu);
+
+mobileMenuItem.forEach((item) => {
+  item.addEventListener('click', removeMobileMenu);
+});
