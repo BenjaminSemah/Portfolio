@@ -440,6 +440,15 @@ form {
   margin-right: 37px;
   padding-top: 20px;
 }
+.languagesUsed {
+  border-right: 2px #555555 solid;
+}
+.languagesUsed li{
+  margin: 0;
+  border-left: 2px #555555 solid;
+  /* border-right: 5px #000 solid; */
+  padding: 2px 15px;
+}
 
 @media only screen and (min-width: 1080px) {
   .hamburger-menu {
