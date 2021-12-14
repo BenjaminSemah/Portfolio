@@ -200,7 +200,7 @@ a h2 {
 .languagesUsed {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding-left: 0;
 }
@@ -440,14 +440,38 @@ form {
   margin-right: 37px;
   padding-top: 20px;
 }
-.languagesUsed {
-  border-right: 2px #555555 solid;
-}
-.languagesUsed li{
+
+.languagesUsed li:nth-child(2),
+.languagesUsed li:nth-child(3),
+.languagesUsed li:nth-child(4) {
   margin: 0;
   border-left: 2px #555555 solid;
-  /* border-right: 5px #000 solid; */
   padding: 2px 15px;
+}
+
+/* MOBILE POP UP */
+
+.popupObject {
+  display: none;
+  position: fixed;
+  height: 90vh;
+  width: 90%;
+  margin: auto;
+  background-color: yellow;
+}
+
+.titleAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popupTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  line-height: 28px;
 }
 
 @media only screen and (min-width: 1080px) {

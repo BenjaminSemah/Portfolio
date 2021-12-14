@@ -1,19 +1,39 @@
 
-let objects = [
+let projectObjects = [
     {
-        name: 'blaa',
-        description : 'hhhhh',
+        name: 'Multi-Post Stories',
+        description : `A daily selection of privately personalized reads; no accounts or
+        sign-ups required. has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a standard dummy text.`,
         featuredImage: './assets/Img-Placeholder.svg',
         technologies: ['css','html','bootstrap','ruby']
     },
     {
-        name: 'blaa',
-        description : 'hhhhh',
+        name: 'Multi-Post Stories',
+        description : `A daily selection of privately personalized reads; no accounts or
+        sign-ups required. has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a standard dummy text.`,
         featuredImage: './assets/Img-Placeholder.svg',
         technologies: ['css','html','bootstrap','ruby']
     },
-   
+    {
+        name: 'Multi-Post Stories',
+        description : `A daily selection of privately personalized reads; no accounts or
+        sign-ups required. has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a standard dummy text.`,
+        featuredImage: './assets/Img-Placeholder.svg',
+        technologies: ['css','html','bootstrap','ruby']
+    },
+    {
+        name: 'Multi-Post Stories',
+        description : `A daily selection of privately personalized reads; no accounts or
+        sign-ups required. has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a standard dummy text.`,
+        featuredImage: './assets/Img-Placeholder.svg',
+        technologies: ['css','html','bootstrap','ruby']
+    } 
 ]
+
 const createListItem = (technology)=>{
     let listItem = document.createElement('li');
     listItem.textContent = technology;
@@ -24,8 +44,7 @@ const makeTechnologies = (technologies=[],index)=>{
     let project = document.querySelector(`#project${index+1} ul`)
      technologies.map((technology)=>createListItem(technology)).forEach((node)=>{
          project.appendChild(node)
-     })
-     
+     })   
 }
 
 const makeProject = ({name,description,featuredImage,technologies},index)=>{
@@ -40,26 +59,34 @@ const makeProject = ({name,description,featuredImage,technologies},index)=>{
         src="${featuredImage}"
         alt="Screenshot of Project"
     />
-</a>
-<div class="project1Info">
-    <h3 class="multiPost">${name}</h3>
-    <p class="projectBrief">
-        ${description}
-    </p>
-    <div class="programmingLanguages">
-        <ul class="languagesUsed">
+    </a>
+    <div class="project1Info">
+        <h3 class="multiPost">${name}</h3>
+        <p class="projectBrief">
+            ${description}
+        </p>
+        <div class="programmingLanguages">
+            <ul class="languagesUsed">
 
-        </ul>
+            </ul>
+        </div>
+        <button class="projectButton" type="Button">See Project</button>
     </div>
-    <button class="projectButton" type="Button">See Project</button>
-</div>
     `;
     let myProjects = document.querySelector('.myProjects')
     myProjects.appendChild(projectDiv)
     return projectId
-
 }
- 
 
-objects.forEach((object,index)=>makeProject(object,index))
-objects.forEach((object,index)=>makeTechnologies(object.technologies,index))
+projectObjects.forEach((object,index)=>makeProject(object,index))
+projectObjects.forEach((object,index)=>makeTechnologies(object.technologies,index))
+
+document.querySelectorAll('.myProjects .projectButton').forEach((projectBtn) =>{
+    projectBtn.addEventListener('click', () => {
+        document.querySelector('.popupObject').style.display='block';
+    })
+});
+
+document.querySelector('.popupClose').addEventListener('click', () => {
+    document.querySelector('.popupObject').style.display='none';
+});
