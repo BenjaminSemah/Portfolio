@@ -18,19 +18,39 @@
 			</script>
 	</head>	
 	<body>
-		<nav class="mobile-menu">
-			<div class="mobile-menu-wrapper">
-				<i class="closeBtn fa fa-times" aria-hidden="true"></i>
-				<ul class="mobile-menu-list">
-					<li class="mobile-menu-item"><a href="#portfolioWorks">Portfolio</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
-					<li class="mobile-menu-item"><a href="#myTitle">About</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
-					<li class="mobile-menu-item"><a href="#contactSection">Contact</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+
+		<div class="desktop-pop-Wrapper">
+			<div class="popup-desktop">
+				<div class="titleAndButton">
+					<h2 id="popupTitle">Multi-Post story</h2>
+					<i class="popupClose closeBtn fa fa-times" aria-hidden="true"></i>
+				</div>
+				<img src="./assets/portfolioSnapshot.svg" alt="Project Image">
+				<p id="popupDescribe">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, vero? 
+					Tempora velit aliquam quaerat error voluptatibus laudantium corrupti 
+					harum dolorumenda provident debitis ea reprehenderit repellat 
+					ducimus autem eius enim. Assumenda provident debitis ea reprehenderit repellat 
+					ducimus autem eius enim.
+				</p>
+				<ul class="languagesUsed popupLanguages">
+					<li>html</li>
+					<li>Ruby on rails</li>
+					<li>css</li>
 				</ul>
+				<div class="popupBtns">
+					<button class="seeBtn" id="seeLiveBtn">
+						<a href="#">See Live</a>
+						<img src="./assets/seeLiveIcon.svg" alt="See Live Icon">
+					</button>
+					<button class="seeBtn" id="seeSourceBtn">
+						<a href="#">See Source</a>
+						<img src="./assets/github.svg" alt="See Source Code">
+					</button>
+				</div>
 			</div>
-		</nav>
-
-
-
+		</div>
+		
 		<div class="popupWrapper">
 			<div class="popupObject">
 				<div class="titleAndButton">
@@ -62,326 +82,117 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
-
-		<header>
-			<a class="myLogo" href="#">My Logo</a>
-			<nav class="navIcon">
-				<a class="desktop-nav-items" href="#">Portfolio</a>
-				<a class="desktop-nav-items" href="#">About</a>
-				<a class="desktop-nav-items" href="#">Contact</a>
-				<a class="desktop-nav-items" href="#"><img src="assets/mailBox.svg" alt="mail box icon" /></a>
-				<a class="hamburger-menu" href="#"><img src="assets/navIcon.svg" alt="navigation icon" /></a>
+		
+		<div class="blur">
+			<nav class="mobile-menu">
+				<div class="mobile-menu-wrapper">
+					<i class="closeBtn fa fa-times" aria-hidden="true"></i>
+					<ul class="mobile-menu-list">
+						<li class="mobile-menu-item"><a href="#portfolioWorks">Portfolio</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+						<li class="mobile-menu-item"><a href="#myTitle">About</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+						<li class="mobile-menu-item"><a href="#contactSection">Contact</a><i class="menuArrow fa fa-angle-right" aria-hidden="true"></i></li>
+					</ul>
+				</div>
 			</nav>
-		</header>
-		<main class="main-content">
-			<section class="headline">
-				<div class="nameTitle">
-					<h1 id="myName">Benjamin Semah</h1>
-					<h2 id="myTitle">Software Developer</h2>
-				</div>
-				<div id="bio">
-					<p class="shortBio">
-						I can help you build a product, feature or website. Look through some
-						of my work and experience! If you like what you see and have a project
-						you need coded, don’t hestiate to contact me.
-					</p>
-				</div>
-			</section>
-			<section class="myAbilities">
-				<img class="line1" src="./assets/vectorLine.svg" alt="horizontal line" />
-				<ul class="knowledge">
-					<li class="myLanguages">
-						<a id="languages" href="#"><h2>Languages</h2></a>
-						<ul class="languages-list">
-							<li class="language">
-								<a href="#">JavaScript</a>
-							</li>
-							<li class="language">
-								<a href="#">Ruby</a>
-							</li>
-							<li class="language">
-								<a href="#">Html</a>
-							</li>
-							<li class="language">
-								<a href="#">Css</a>
-							</li>
-						</ul>
-					</li>
-					<li class="myFrameworks">
-						<a id="frameworks" href="#"><h2>Frameworks</h2></a>
-						<ul class="frameworks-list">
-							<li class="framework">
-								<a href="#">Bootstrap</a>
-							</li>
-							<li class="framework">
-								<a href="#">Ruby on Rails</a>
-							</li>
-							<li class="framework">
-								<a href="#">RSPec</a>
-							</li>
-							<li class="framework">
-								<a href="#">CapyBara</a>
-							</li>
-							<li class="framework">
-								<a href="#">Selenium</a>
-							</li>
-						</ul>
-					</li>
-					<li class="mySkills">
-						<a id="skills" href="#"><h2>Skills</h2></a>
-						<ul class="skills-list">
-							<li class="skill">
-								<a href="#">Codekit</a>
-							</li>
-							<li class="skill">
-								<a href="#">Github</a>
-							</li>
-							<li class="skill">
-								<a href="#">Codepen</a>
-							</li>
-							<li class="skill">
-								<a href="#">Gitlab</a>
-							</li>
-							<li class="skill">
-								<a href="#">Terminal</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<img class="line2" src="./assets/vectorLine.svg" alt="horizontal line" />
-			</section>
-		</main>
-		<div class="workAndSocials">
-			<div class="work1">
-				<img
-					class="downArrow"
-					src="./assets/downArrow.png"
-					alt="Arrow pointing down"
-				/>
-				<h2>Work</h2>
-			</div>
-			<div class="socials">
-				<ul class="profiles">
-					<li>
-						<a href="#">
-							<img class="icons" src="assets/github.svg" alt="GitHub Logo" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img class="icons" src="assets/linkedInn.png" alt="LinkedIn Logo" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img
-								class="icons"
-								src="assets/angellist.svg"
-								alt="Angellist Logo"
-							/>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img class="icons" src="assets/Twitter.svg" alt="Twitter Logo" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img class="icons" src="assets/medium.svg" alt="Medium Logo" />
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="work">
-				<img
-					class="downArrow"
-					src="./assets/downArrow.png"
-					alt="Arrow pointing down"
-				/>
-				<h2>Work</h2>
-			</div>
-		</div>
-		<section id="portfolioWorks" class="recentWorks">
-			<h2 class="myRecentWorks">
-				My Recent<br />
-				Work
-			</h2>
-			<h2 class="myRecentWorks2">
-				My recent work
-			</h2>
-			<img class="line3" src="./assets/vectorLine.svg" alt="horizontal line" />
-			<img class="desktopLine3" src="./assets/desktopLine3.svg" alt="horizontal line" />
-			<div class="myProjects">
-				<!-- <div id="project1">
-					<a class="projectImages" href="#">
-						<img
-							class="imageNumber1"
-							src="./assets/Img-Placeholder.svg"
-							alt="Screenshot of Project"
-						/>
-					</a>
-					<div class="project1Info">
-						<h3 class="multiPost">Multi-Post Stories</h3>
-						<p class="projectBrief">
-							A daily selection of privately personalized reads; no accounts or
-							sign-ups required. has been the industry's standard dummy text ever
-							since the 1500s, when an unknown printer took a standard dummy text.
-						</p>
-						<div class="programmingLanguages">
-							<ul class="languagesUsed">
-								<li>css</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>html</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>bootstrap</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>Ruby</li>
-							</ul>
-						</div>
-						<button class="projectButton" type="Button">See Project</button>
+			<header>
+				<a class="myLogo" href="#">My Logo</a>
+				<nav class="navIcon">
+					<a class="desktop-nav-items" href="#">Portfolio</a>
+					<a class="desktop-nav-items" href="#">About</a>
+					<a class="desktop-nav-items" href="#">Contact</a>
+					<a class="desktop-nav-items" href="#"><img src="assets/mailBox.svg" alt="mail box icon" /></a>
+					<a class="hamburger-menu" href="#"><img src="assets/navIcon.svg" alt="navigation icon" /></a>
+				</nav>
+			</header>
+			<main class="main-content">
+				<section class="headline">
+					<div class="nameTitle">
+						<h1 id="myName">Benjamin Semah</h1>
+						<h2 id="myTitle">Software Developer</h2>
 					</div>
-				</div>
-				<div id="project2">
-					<a class="projectImages" href="#">
-						<img
-							class="imageNumber2"
-							src="./assets/Img-Placeholder.svg"
-							alt="Screenshot of Project"
-						/>
-					</a>
-					<div class="project2Info">
-						<h3 class="multiPost">Multi-Post Stories</h3>
-						<p class="projectBrief">
-							A daily selection of privately personalized reads; no accounts or
-							sign-ups required. has been the industry's standard dummy text ever
-							since the 1500s, when an unknown printer took a standard dummy text.
+					<div id="bio">
+						<p class="shortBio">
+							I can help you build a product, feature or website. Look through some
+							of my work and experience! If you like what you see and have a project
+							you need coded, don’t hestiate to contact me.
 						</p>
-						<div class="programmingLanguages">
-							<ul class="languagesUsed">
-								<li>css</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>html</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>bootstrap</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>Ruby</li>
-							</ul>
-						</div>
-						<button class="projectButton" type="Button">See Project</button>
 					</div>
-				</div>
-				<div id="project3">
-					<a class="projectImages" href="#">
-						<img
-							class="imageNumber3"
-							src="./assets/Img-Placeholder.svg"
-							alt="Screenshot of Project"
-						/>
-					</a>
-					<div class="project3Info">
-						<h3 class="multiPost">Multi-Post Stories</h3>
-						<p class="projectBrief">
-							A daily selection of privately personalized reads; no accounts or
-							sign-ups required. has been the industry's standard dummy text ever
-							since the 1500s, when an unknown printer took a standard dummy text.
-						</p>
-						<div class="programmingLanguages">
-							<ul class="languagesUsed">
-								<li>css</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>html</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>bootstrap</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>Ruby</li>
+				</section>
+				<section class="myAbilities">
+					<img class="line1" src="./assets/vectorLine.svg" alt="horizontal line" />
+					<ul class="knowledge">
+						<li class="myLanguages">
+							<a id="languages" href="#"><h2>Languages</h2></a>
+							<ul class="languages-list">
+								<li class="language">
+									<a href="#">JavaScript</a>
+								</li>
+								<li class="language">
+									<a href="#">Ruby</a>
+								</li>
+								<li class="language">
+									<a href="#">Html</a>
+								</li>
+								<li class="language">
+									<a href="#">Css</a>
+								</li>
 							</ul>
-						</div>
-						<button class="projectButton" type="Button">See Project</button>
-					</div>
-				</div>
-				<div id="project4">
-					<a class="projectImages" href="#">
-						<img
-							class="imageNumber4"
-							src="./assets/Img-Placeholder.svg"
-							alt="Screenshot of Project"
-						/>
-					</a>
-					<div class="project4Info">
-						<h3 class="multiPost">Multi-Post Stories</h3>
-						<p class="projectBrief">
-							A daily selection of privately personalized reads; no accounts or
-							sign-ups required. has been the industry's standard dummy text ever
-							since the 1500s, when an unknown printer took a standard dummy text.
-						</p>
-						<div class="programmingLanguages">
-							<ul class="languagesUsed">
-								<li>css</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>html</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>bootstrap</li>
-								<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
-								<li>Ruby</li>
+						</li>
+						<li class="myFrameworks">
+							<a id="frameworks" href="#"><h2>Frameworks</h2></a>
+							<ul class="frameworks-list">
+								<li class="framework">
+									<a href="#">Bootstrap</a>
+								</li>
+								<li class="framework">
+									<a href="#">Ruby on Rails</a>
+								</li>
+								<li class="framework">
+									<a href="#">RSPec</a>
+								</li>
+								<li class="framework">
+									<a href="#">CapyBara</a>
+								</li>
+								<li class="framework">
+									<a href="#">Selenium</a>
+								</li>
 							</ul>
-						</div>
-						<button class="projectButton" type="Button">See Project</button>
-					</div>
-				</div> -->
-			</div>
-		</section>
-		<footer id="contactSection" class="contact">
-			<div class="contactForm">
-				<div class="contact-text">
-					<h2 class="contactUsHeading">CONTACT US</h2>
-					<h2 class="chat">Let's Chat!</h2>
-					<p>
-						If you have an appication you are interested in developing, a feature
-						that you need built or a pooject that needs coding, i'd love to help
-						with it
-					</p>
-				</div>
-				<form action="https://formspree.io/f/meqnjrwb" method="post">
-					<input
-						name="name"
-						id="name"
-						class="formEl"
-						type="text"
-						placeholder="Your name"
-						maxlength="30"
-						required
+						</li>
+						<li class="mySkills">
+							<a id="skills" href="#"><h2>Skills</h2></a>
+							<ul class="skills-list">
+								<li class="skill">
+									<a href="#">Codekit</a>
+								</li>
+								<li class="skill">
+									<a href="#">Github</a>
+								</li>
+								<li class="skill">
+									<a href="#">Codepen</a>
+								</li>
+								<li class="skill">
+									<a href="#">Gitlab</a>
+								</li>
+								<li class="skill">
+									<a href="#">Terminal</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<img class="line2" src="./assets/vectorLine.svg" alt="horizontal line" />
+				</section>
+			</main>
+			<div class="workAndSocials">
+				<div class="work1">
+					<img
+						class="downArrow"
+						src="./assets/downArrow.png"
+						alt="Arrow pointing down"
 					/>
-					<input
-						name="email"
-						id="email"
-						class="formEl"
-						type="email"
-						placeholder="Your email address"
-						required
-					/>
-					<textarea
-						name="message"
-						id="message"
-						class="formEl"
-						cols="30"
-						rows="10"
-						maxlength="500"
-						placeholder="Please leave your message here"
-						required
-					></textarea>
-					<input class="projectButton btn" type="submit" value="Send" />
-				</form>
-			</div>
-			<img class="line4" src="./assets/vectorLine.svg" alt="horizontal line" />
-			<img class="desktopLine4" src="./assets/desktopLine4.svg" alt="horizontal line" />
-			<div class="socialsAndEmail">
-				<div class="socials footer-socials">
-					<ul class="profiles footer-icons">
+					<h2>Work</h2>
+				</div>
+				<div class="socials">
+					<ul class="profiles">
 						<li>
 							<a href="#">
 								<img class="icons" src="assets/github.svg" alt="GitHub Logo" />
@@ -389,11 +200,7 @@
 						</li>
 						<li>
 							<a href="#">
-								<img
-									class="icons"
-									src="assets/linkedInn.png"
-									alt="LinkedIn Logo"
-								/>
+								<img class="icons" src="assets/linkedInn.png" alt="LinkedIn Logo" />
 							</a>
 						</li>
 						<li>
@@ -417,9 +224,230 @@
 						</li>
 					</ul>
 				</div>
-				<span class="mail"><a id="bottomMail" class="emailAddress" href="mailto:ouremail@email.com">emailhere@email.com</a></span>
+				<div class="work">
+					<img
+						class="downArrow"
+						src="./assets/downArrow.png"
+						alt="Arrow pointing down"
+					/>
+					<h2>Work</h2>
+				</div>
 			</div>
-		</footer>
+			<section id="portfolioWorks" class="recentWorks">
+				<h2 class="myRecentWorks">
+					My Recent<br />
+					Work
+				</h2>
+				<h2 class="myRecentWorks2">
+					My recent work
+				</h2>
+				<img class="line3" src="./assets/vectorLine.svg" alt="horizontal line" />
+				<img class="desktopLine3" src="./assets/desktopLine3.svg" alt="horizontal line" />
+				<div class="myProjects">
+					<!-- <div id="project1">
+						<a class="projectImages" href="#">
+							<img
+								class="imageNumber1"
+								src="./assets/Img-Placeholder.svg"
+								alt="Screenshot of Project"
+							/>
+						</a>
+						<div class="project1Info">
+							<h3 class="multiPost">Multi-Post Stories</h3>
+							<p class="projectBrief">
+								A daily selection of privately personalized reads; no accounts or
+								sign-ups required. has been the industry's standard dummy text ever
+								since the 1500s, when an unknown printer took a standard dummy text.
+							</p>
+							<div class="programmingLanguages">
+								<ul class="languagesUsed">
+									<li>css</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>html</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>bootstrap</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>Ruby</li>
+								</ul>
+							</div>
+							<button class="projectButton" type="Button">See Project</button>
+						</div>
+					</div>
+					<div id="project2">
+						<a class="projectImages" href="#">
+							<img
+								class="imageNumber2"
+								src="./assets/Img-Placeholder.svg"
+								alt="Screenshot of Project"
+							/>
+						</a>
+						<div class="project2Info">
+							<h3 class="multiPost">Multi-Post Stories</h3>
+							<p class="projectBrief">
+								A daily selection of privately personalized reads; no accounts or
+								sign-ups required. has been the industry's standard dummy text ever
+								since the 1500s, when an unknown printer took a standard dummy text.
+							</p>
+							<div class="programmingLanguages">
+								<ul class="languagesUsed">
+									<li>css</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>html</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>bootstrap</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>Ruby</li>
+								</ul>
+							</div>
+							<button class="projectButton" type="Button">See Project</button>
+						</div>
+					</div>
+					<div id="project3">
+						<a class="projectImages" href="#">
+							<img
+								class="imageNumber3"
+								src="./assets/Img-Placeholder.svg"
+								alt="Screenshot of Project"
+							/>
+						</a>
+						<div class="project3Info">
+							<h3 class="multiPost">Multi-Post Stories</h3>
+							<p class="projectBrief">
+								A daily selection of privately personalized reads; no accounts or
+								sign-ups required. has been the industry's standard dummy text ever
+								since the 1500s, when an unknown printer took a standard dummy text.
+							</p>
+							<div class="programmingLanguages">
+								<ul class="languagesUsed">
+									<li>css</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>html</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>bootstrap</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>Ruby</li>
+								</ul>
+							</div>
+							<button class="projectButton" type="Button">See Project</button>
+						</div>
+					</div>
+					<div id="project4">
+						<a class="projectImages" href="#">
+							<img
+								class="imageNumber4"
+								src="./assets/Img-Placeholder.svg"
+								alt="Screenshot of Project"
+							/>
+						</a>
+						<div class="project4Info">
+							<h3 class="multiPost">Multi-Post Stories</h3>
+							<p class="projectBrief">
+								A daily selection of privately personalized reads; no accounts or
+								sign-ups required. has been the industry's standard dummy text ever
+								since the 1500s, when an unknown printer took a standard dummy text.
+							</p>
+							<div class="programmingLanguages">
+								<ul class="languagesUsed">
+									<li>css</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>html</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>bootstrap</li>
+									<li><img src="./assets/separator.svg" alt="Vertical line" /></li>
+									<li>Ruby</li>
+								</ul>
+							</div>
+							<button class="projectButton" type="Button">See Project</button>
+						</div>
+					</div> -->
+				</div>
+			</section>
+			<footer id="contactSection" class="contact">
+				<div class="contactForm">
+					<div class="contact-text">
+						<h2 class="contactUsHeading">CONTACT US</h2>
+						<h2 class="chat">Let's Chat!</h2>
+						<p>
+							If you have an appication you are interested in developing, a feature
+							that you need built or a pooject that needs coding, i'd love to help
+							with it
+						</p>
+					</div>
+					<form action="https://formspree.io/f/meqnjrwb" method="post">
+						<input
+							name="name"
+							id="name"
+							class="formEl"
+							type="text"
+							placeholder="Your name"
+							maxlength="30"
+							required
+						/>
+						<input
+							name="email"
+							id="email"
+							class="formEl"
+							type="email"
+							placeholder="Your email address"
+							required
+						/>
+						<textarea
+							name="message"
+							id="message"
+							class="formEl"
+							cols="30"
+							rows="10"
+							maxlength="500"
+							placeholder="Please leave your message here"
+							required
+						></textarea>
+						<input class="projectButton btn" type="submit" value="Send" />
+					</form>
+				</div>
+				<img class="line4" src="./assets/vectorLine.svg" alt="horizontal line" />
+				<img class="desktopLine4" src="./assets/desktopLine4.svg" alt="horizontal line" />
+				<div class="socialsAndEmail">
+					<div class="socials footer-socials">
+						<ul class="profiles footer-icons">
+							<li>
+								<a href="#">
+									<img class="icons" src="assets/github.svg" alt="GitHub Logo" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										class="icons"
+										src="assets/linkedInn.png"
+										alt="LinkedIn Logo"
+									/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										class="icons"
+										src="assets/angellist.svg"
+										alt="Angellist Logo"
+									/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="icons" src="assets/Twitter.svg" alt="Twitter Logo" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="icons" src="assets/medium.svg" alt="Medium Logo" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<span class="mail"><a id="bottomMail" class="emailAddress" href="mailto:ouremail@email.com">emailhere@email.com</a></span>
+				</div>
+			</footer>
+		</div>
 		<script src="./mobileMenu.js"></script>
 		<script src="./projects.js"></script>
 	</body>

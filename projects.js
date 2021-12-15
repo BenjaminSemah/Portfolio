@@ -89,7 +89,7 @@ document.querySelectorAll('.myProjects .projectButton').forEach((projectBtn) =>{
 
 // document.querySelectorAll('.myProjects .projectButton').forEach((projectBtn) =>{
 //     projectBtn.addEventListener('click', () => {
-//         document.querySelector('body').style.filter= 'blur(1px)';
+//         document.querySelector('.blur').style.filter= 'blur(8px)';
 //     })
 // });
 

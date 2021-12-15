@@ -451,14 +451,15 @@ form {
 
 /* MOBILE POP UP */
 
-.popupWrapper {
+/* .popupWrapper {
   position: fixed;
   height: 100vh;
   width: 100%;
   background: red;
-}
+} */
 
 .popupObject {
+  /* position: fixed; */
   display: block;
   height: 90vh;
   width: 90%;
@@ -788,11 +789,6 @@ form {
     font-size: 17px;
   }
 
-  /* DESKTOP POPUP */
-  .popupObject {
-    margin-left: 3.5em;
-  }
-  
   .titleAndButton {
     display: flex;
     justify-content: space-between;
@@ -850,4 +846,91 @@ form {
     margin-bottom: 50px;
     padding-top: 10px;
   }
+
+  .popupWrapper,
+  .popupObject {
+    display: none;
+  }
+
+  /* DESKTOP POPUP */
+
+  /* .popupWrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: red;
+} */
+
+.popup-desktop {
+  display: block;
+  /* position: fixed; */
+  display: block;
+  height: 90vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(229, 229, 229, 0.5);
+  border: .15em solid white;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.titleAndButton {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 5% 0; */
+}
+
+#popupTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 500px;
+  font-weight: bold;
+  color: white;
+  line-height: 32px;
+  margin-left: 1em;
+}
+
+.popupLanguages {
+  display: flex;
+  justify-content: center;
+}
+
+.popupBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 7em;
+  margin-left: 110px;
+}
+
+.seeBtn {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  text-align: center;
+  background: cornflowerblue;
+  padding: 20px 6px;
+  border: none;
+}
+
+.seeBtn a {
+  color: white;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+#popupDescribe {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  width: 90%;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
 }
