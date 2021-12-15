@@ -452,18 +452,22 @@ form {
 /* MOBILE POP UP */
 
 .popupObject {
-  display: none;
+  display: block;
   position: fixed;
   height: 90vh;
   width: 90%;
-  margin: auto;
-  background-color: yellow;
+  background: rgba(229, 229, 229, 0.5);
+  border: .15em solid white;
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 1em;
 }
 
 .titleAndButton {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 5% 0;
+  margin-top: 5%;
 }
 
 #popupTitle {
@@ -472,7 +476,53 @@ form {
   font-weight: bold;
   color: white;
   line-height: 28px;
+  margin-left: 1em;
 }
+
+.popupLanguages {
+  display: flex;
+  justify-content: center;
+}
+
+.popupBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 7em;
+  margin-left: 110px;
+}
+
+.seeBtn {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  text-align: center;
+  background: cornflowerblue;
+  padding: 20px 6px;
+  border: none;
+}
+
+.seeBtn a {
+  color: white;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+#popupDescribe {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  width: 90%;
+  margin-left: 1em;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+
+
 
 @media only screen and (min-width: 1080px) {
   .hamburger-menu {
