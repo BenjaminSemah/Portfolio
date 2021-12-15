@@ -83,10 +83,16 @@ projectObjects.forEach((object,index)=>makeTechnologies(object.technologies,inde
 
 document.querySelectorAll('.myProjects .projectButton').forEach((projectBtn) =>{
     projectBtn.addEventListener('click', () => {
-        document.querySelector('.popupObject').style.display='block';
+        document.querySelector('.popupWrapper').style.display='block';
     })
 });
 
+// document.querySelectorAll('.myProjects .projectButton').forEach((projectBtn) =>{
+//     projectBtn.addEventListener('click', () => {
+//         document.querySelector('body').style.filter= 'blur(1px)';
+//     })
+// });
+
 document.querySelector('.popupClose').addEventListener('click', () => {
-    document.querySelector('.popupObject').style.display='none';
+    document.querySelector('.popupWrapper').style.display='none';
 });
