@@ -345,7 +345,7 @@
 						with it
 					</p>
 				</div>
-				<form action="https://formspree.io/f/meqnjrwb" method="post">
+				<form action="https://formspree.io/f/meqnjrwb" method="post" novalidate>
 					<input
 						name="name"
 						id="name"
@@ -357,6 +357,7 @@
 					/>
 					<input
 						name="email"
+						pattern="[^A-Z]*"
 						id="email"
 						class="formEl"
 						type="email"
@@ -373,7 +374,8 @@
 						placeholder="Please leave your message here"
 						required
 					></textarea>
-					<input class="projectButton btn" type="submit" value="Send" />
+					<div class="error"></div>
+					<input id="submit" class="projectButton btn" type="submit" value="Send" />
 				</form>
 			</div>
 			<img class="line4" src="./assets/vectorLine.svg" alt="horizontal line" />
@@ -421,5 +423,6 @@
 		</footer>
 		<script src="./mobileMenu.js"></script>
 		<script src="./projects.js"></script>
+		<script src="./validation.js"></script>
 	</body>
 </html>
