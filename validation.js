@@ -19,3 +19,26 @@ submit.addEventListener('submit',()=>{
 email.addEventListener('input',( )=>{
     checkLowerCase()
 })
+
+// const email = document.querySelector('#email');
+// const submit = document.querySelector('#submit');
+// let error = document.querySelector('.error');
+
+// function validateEmail (event) {
+//   if (email.validity.typeMismatch){
+//     error.textContent = 'Please input a valid email.';
+//     event.preventDefault()
+//   } else {
+//     error.textContent = '';
+//   }
+// };
+
+// email.addEventListener('input', (event) => {
+//   validateEmail(event);
+//   con;sole.log('aaaa')
+// })
+
+// submit.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   validateEmail(event);
+// });
