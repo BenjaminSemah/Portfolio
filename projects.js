@@ -81,18 +81,24 @@ const makeProject = ({name,description,featuredImage,technologies},index)=>{
 projectObjects.forEach((object,index)=>makeProject(object,index))
 projectObjects.forEach((object,index)=>makeTechnologies(object.technologies,index))
 
-document.querySelectorAll('.myProjects .projectButton').forEach((projectBtn) =>{
-    projectBtn.addEventListener('click', () => {
-        document.querySelector('.popupWrapper').style.display='block';
-    })
+const projectModal = document.querySelector('.popupObject')
+const projectWrap =document.querySelector('.popupWrapper')
+const seeProjectBtn = Array.from(document.querySelectorAll('.projectButton'))
+Object.keys(seeProjectBtn).forEach((k) =>{
+    seeProjectBtn[k].addEventListener('click', () => {
+        console.log('Test Work')
+        projectWrap.classList.toggle('hideModal')
+        projectModal.classList.toggle('hideModal')
+           })
 });
 
-// document.querySelectorAll('.myProjects .projectButton').forEach((projectBtn) =>{
-//     projectBtn.addEventListener('click', () => {
-//         document.querySelector('.blur').style.filter= 'blur(8px)';
-//     })
-// });
+const cancelBtn = Array.from(document.querySelectorAll('.popupClose'));
+Object.keys(cancelBtn).forEach(k =>{
+cancelBtn[k].addEventListener('click',()=>{
+    projectWrap.classList.toggle('hideModal')
+    projectModal.classList.toggle('hideModal')
+})
+})
 
-document.querySelector('.popupClose').addEventListener('click', () => {
-    document.querySelector('.popupWrapper').style.display='none';
-});
+
+
