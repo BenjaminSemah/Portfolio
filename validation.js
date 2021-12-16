@@ -4,7 +4,6 @@ const myForm = document.getElementById('myform');
 let testBol = false;
 let emailChecker = '';
 
-// ddddddddddddddddddddd
 email.addEventListener('keyup', () => {
   emailChecker = email.value.toLowerCase();
 });
