@@ -445,7 +445,7 @@ form {
 .languagesUsed li:nth-child(3),
 .languagesUsed li:nth-child(4) {
   margin: 0;
-  border-left: 2px #555555 solid;
+  border-left: 2px #555 solid;
   padding: 2px 15px;
 }
 
@@ -457,7 +457,7 @@ form {
   height: 90vh;
   width: 90%;
   background: rgba(229, 229, 229, 0.5);
-  border: .15em solid white;
+  border: 0.15em solid white;
   text-align: center;
   margin-top: 2em;
   margin-left: 1em;
@@ -521,8 +521,14 @@ form {
   padding-top: 10px;
 }
 
-
-
+.error {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(250, 25, 25);
+  line-height: 24px;
+  text-align: center;
+}
 
 @media only screen and (min-width: 1080px) {
   .hamburger-menu {
