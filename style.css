@@ -268,6 +268,7 @@ a h2 {
   padding: 20px;
 }
 
+.formButton,
 .projectButton {
   padding: 18px 15px;
   background-color: #7d73fc;
@@ -433,6 +434,7 @@ form {
   color: #7d73fc;
 }
 
+.closeBtn-two,
 .closeBtn {
   color: #e5e5e5;
   font-size: 1.3em;
@@ -451,12 +453,23 @@ form {
 
 /* MOBILE POP UP */
 
-.popupObject {
-  display: block;
+.popupWrapper {
   position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: #191765;
+}
+
+.hideModal {
+  display: none;
+}
+
+.popupObject {
+  position: fixed;
+  top: 0;
   height: 90vh;
   width: 90%;
-  background: rgba(229, 229, 229, 0.5);
+  background: rgb(75, 67, 121, 0.9);
   border: 0.15em solid white;
   text-align: center;
   margin-top: 2em;
@@ -467,7 +480,6 @@ form {
   display: flex;
   justify-content: space-between;
   padding: 5% 0;
-  margin-top: 5%;
 }
 
 #popupTitle {
@@ -484,28 +496,33 @@ form {
   justify-content: center;
 }
 
+.popupLanguagesDesktop {
+  display: none;
+}
+
 .popupBtns {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 7em;
-  margin-left: 110px;
 }
 
 .seeBtn {
   display: flex;
-  gap: 7px;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
-  background: cornflowerblue;
-  padding: 20px 6px;
+  background: #7d73fc;
+  padding: 20px 10px;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
-.seeBtn a {
+.seeBtn span {
   color: white;
   text-decoration: none;
-  padding: 0 2px;
+  padding: 0 5px;
 }
 
 #popupDescribe {
@@ -517,7 +534,7 @@ form {
   text-align: center;
   width: 90%;
   margin-left: 1em;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding-top: 10px;
 }
 
@@ -530,17 +547,118 @@ form {
   text-align: center;
 }
 
-@media only screen and (min-width: 1080px) {
+#popupDescribeDesktop {
+  display: none;
+}
+
+.mobileSnapshot {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desktopSnapshot {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  /* DESKTOP POP UP */
+  .popupObject {
+    width: 80%;
+    height: 100vh;
+    margin-left: 130px;
+  }
+
+  .popupWrapper {
+    height: 130vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/popupBackground.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 25%;
+  }
+
+  .titleAndButton {
+    padding: 20px 0;
+  }
+
+  #popupTitle {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    line-height: 32px;
+  }
+
+  .popupClose {
+    font-size: 50px;
+  }
+
+  .desktopSnapshot {
+    display: block;
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .mobileSnapshot {
+    display: none;
+  }
+
+  #popupDescribe {
+    display: none;
+  }
+
+  #popupDescribeDesktop {
+    display: block;
+    width: 50%;
+    margin: 30px auto 0 auto;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .popupLanguages {
+    display: none;
+  }
+
+  .popupLanguagesDesktop {
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .popupBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1px;
+  }
+
+  .seeBtn {
+    margin: 0 30px;
+    padding: 20px 5px;
+    width: 15%;
+  }
+
+  /* DESKTOP VERSION  */
   .hamburger-menu {
     display: none;
   }
 
   header {
     margin: 0 2rem;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 90%;
+    width: 80%;
   }
 
   nav {
