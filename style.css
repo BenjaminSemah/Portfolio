@@ -200,7 +200,7 @@ a h2 {
 .languagesUsed {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding-left: 0;
 }
@@ -268,6 +268,7 @@ a h2 {
   padding: 20px;
 }
 
+.formButton,
 .projectButton {
   padding: 18px 15px;
   background-color: #7d73fc;
@@ -433,6 +434,7 @@ form {
   color: #7d73fc;
 }
 
+.closeBtn-two,
 .closeBtn {
   color: #e5e5e5;
   font-size: 1.3em;
@@ -441,17 +443,213 @@ form {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 1080px) {
+.languagesUsed li:nth-child(2),
+.languagesUsed li:nth-child(3),
+.languagesUsed li:nth-child(4) {
+  margin: 0;
+  border-left: 2px #555 solid;
+  padding: 2px 15px;
+}
+
+/* MOBILE POP UP */
+
+.popupWrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: #191765;
+}
+
+.hideModal {
+  display: none;
+}
+
+.popupObject {
+  position: fixed;
+  top: 0;
+  height: 90vh;
+  width: 90%;
+  background: rgb(75, 67, 121, 0.9);
+  border: 0.15em solid white;
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+.titleAndButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 0;
+}
+
+#popupTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  line-height: 28px;
+  margin-left: 1em;
+}
+
+.popupLanguages {
+  display: flex;
+  justify-content: center;
+}
+
+.popupLanguagesDesktop {
+  display: none;
+}
+
+.popupBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.seeBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background: #7d73fc;
+  padding: 20px 10px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.seeBtn span {
+  color: white;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+#popupDescribe {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  width: 90%;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+#popupDescribeDesktop {
+  display: none;
+}
+
+.mobileSnapshot {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desktopSnapshot {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  /* DESKTOP POP UP */
+  .popupObject {
+    width: 80%;
+    height: 100vh;
+    margin-left: 130px;
+  }
+
+  .popupWrapper {
+    height: 130vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/popupBackground.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 25%;
+  }
+
+  .titleAndButton {
+    padding: 20px 0;
+  }
+
+  #popupTitle {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    line-height: 32px;
+  }
+
+  .popupClose {
+    font-size: 50px;
+  }
+
+  .desktopSnapshot {
+    display: block;
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .mobileSnapshot {
+    display: none;
+  }
+
+  #popupDescribe {
+    display: none;
+  }
+
+  #popupDescribeDesktop {
+    display: block;
+    width: 50%;
+    margin: 30px auto 0 auto;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .popupLanguages {
+    display: none;
+  }
+
+  .popupLanguagesDesktop {
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .popupBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1px;
+  }
+
+  .seeBtn {
+    margin: 0 30px;
+    padding: 20px 5px;
+    width: 15%;
+  }
+
+  /* DESKTOP VERSION  */
   .hamburger-menu {
     display: none;
   }
 
   header {
     margin: 0 2rem;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 90%;
+    width: 80%;
   }
 
   nav {
