@@ -451,6 +451,19 @@ form {
   padding: 2px 15px;
 }
 
+.hideError {
+  display: none;
+}
+
+.error {
+  font-family: "Roboto", sans-serif;
+  color: red;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+}
+
 /* MOBILE POP UP */
 
 .popupWrapper {
