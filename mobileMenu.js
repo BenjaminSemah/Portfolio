@@ -1,6 +1,6 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const closeBtn = document.querySelector('.closeBtn-two');
-const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenu = document.querySelector('.mobile-mnu');
 const mobileMenuItem = document.querySelectorAll('.mobile-menu-item a');
 
 function showMobileMenu() {
