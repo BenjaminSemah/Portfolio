@@ -9,7 +9,7 @@ This is a mock up portfolio project built as part of the Microverse curriculum.
 
 ### Live Demo
 click on the link below to view the portfolio website online
-> [My Portfolio Website](https://benjaminsemah.github.io/Portfolio/)
+> [Link to Live Version](https://benjaminsemah.github.io/Portfolio/)
 
 
 
